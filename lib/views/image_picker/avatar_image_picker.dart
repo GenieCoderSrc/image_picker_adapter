@@ -66,7 +66,7 @@ class AvatarImagePicker extends StatelessWidget {
       cameraEnabled: cameraEnabled,
       galleryEnabled: galleryEnabled,
       onChanged: onChanged,
-      builder: (XFile? pickedFile) => AvatarImageViewer(
+      builder: (XFile? pickedFile) => EditProfileImageViewer(
         imageSource: imageSource,
         pickedFile: pickedFile,
         radius: radius,

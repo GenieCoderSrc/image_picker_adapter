@@ -1,3 +1,11 @@
+## 0.0.2
+
+### 📅 Jul 14, 2025
+
+### ✨ Updated
+
+* Updated dependencies
+
 ## 0.0.1
 
 ### 📅 Jul 14, 2025

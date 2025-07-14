@@ -30,7 +30,7 @@ dependencies:
   get_it_di_global_variable: ^0.0.5
   provider: ^6.1.5
   cross_file: ^0.3.4+2
-  reusable_image_widget: ^0.1.1
+  reusable_image_widget: ^0.1.2
 
 
 
