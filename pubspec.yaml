@@ -4,7 +4,9 @@ description: "A modular and customizable image picker adapter for Flutter. Suppo
   Built with SOLID principles and clean architecture."
 
 version: 0.0.1
-homepage:
+homepage: https://github.com/GenieCoderSrc/image_picker_adapter
+repository: https://github.com/GenieCoderSrc/image_picker_adapter
+issue_tracker: https://github.com/GenieCoderSrc/image_picker_adapter/issues
 
 environment:
   sdk: ^3.8.1
