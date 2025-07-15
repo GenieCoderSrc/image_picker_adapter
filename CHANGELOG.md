@@ -1,3 +1,13 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## 0.0.3
+### Jul 15, 2025
+
+### ✨ Added
+- update reusable_image_widget packages.
+
 ## 0.0.2
 
 ### 📅 Jul 14, 2025

@@ -3,7 +3,7 @@ description: "A modular and customizable image picker adapter for Flutter. Suppo
   cropping, compression, source selection, and Cubit-based state management.
   Built with SOLID principles and clean architecture."
 
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/GenieCoderSrc/image_picker_adapter
 repository: https://github.com/GenieCoderSrc/image_picker_adapter
 issue_tracker: https://github.com/GenieCoderSrc/image_picker_adapter/issues
@@ -30,7 +30,7 @@ dependencies:
   get_it_di_global_variable: ^0.0.5
   provider: ^6.1.5
   cross_file: ^0.3.4+2
-  reusable_image_widget: ^0.1.2
+  reusable_image_widget: ^0.1.3
 
 
 
