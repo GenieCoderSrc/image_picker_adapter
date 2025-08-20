@@ -1,5 +1,5 @@
-export 'package:cross_file/cross_file.dart';
 export 'package:get_it_di_global_variable/get_it_di_global_variable.dart';
+export 'package:image_picker/image_picker.dart';
 
 export 'config/bloc_provider/register_reusable_image_widget_bloc_provider.dart';
 export 'config/dependency_injection/register_reusable_image_widget_dependencies.dart';
