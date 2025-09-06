@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.5
+
+### Sep 6, 2025
+
+### ✨ Fixed
+
+- Fixed `compressImage` for Web platform.
+
+
 ## 0.0.4
 
 ### Aug 22, 2025
