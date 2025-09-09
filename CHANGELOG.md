@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.6
+
+### Sep 9, 2025
+
+### ✨ Removed
+
+- Removed `image_gallery_saver` Dependency.
+- Updated `reusable_image_widget` to 0.1.7
+
 ## 0.0.5
 
 ### Sep 6, 2025
@@ -9,7 +18,6 @@ All notable changes to this project will be documented in this file.
 ### ✨ Fixed
 
 - Fixed `compressImage` for Web platform.
-
 
 ## 0.0.4
 
