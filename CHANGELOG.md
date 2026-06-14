@@ -6,10 +6,16 @@ All notable changes to this project will be documented in this file.
 
 ### jun 14, 2026
 
+### ✨ Added
+
+- Implemented Multi Image picker functionality
+- Added `MultiImagePicker` view
+- Added `MultiImageOrderCubit` for managing image order and selection
+- Integrated multi-image selection logic into `ImagePickerCubit`
+
 ### ✨ Updated
 
 - Updated `reusable_image_widget` to 0.1.7
-
 
 
 ## 0.0.6
