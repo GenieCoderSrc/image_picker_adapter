@@ -20,6 +20,15 @@ class ImagePickerSuccess extends ImagePickerState {
   List<Object?> get props => [pickedFile?.path];
 }
 
+class ImagePickerMultiSuccess extends ImagePickerState {
+  final List<XFile> pickedFiles;
+
+  const ImagePickerMultiSuccess({required this.pickedFiles});
+
+  @override
+  List<Object?> get props => [pickedFiles.map((f) => f.path).toList()];
+}
+
 class ImagePickerFailure extends ImagePickerState {
   final String message;
 

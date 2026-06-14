@@ -57,4 +57,43 @@ class ImagePickerManager {
       return null;
     }
   }
+
+  /// Picks multiple images from the gallery, optionally crops and compresses each.
+  Future<List<XFile>> pickMultiImages({
+    required BuildContext context,
+    required MountedCheck mounted,
+    bool crop = false,
+    bool compress = false,
+    int quality = 35,
+  }) async {
+    try {
+      final List<XFile> pickedFiles = await pickerService.pickMultiImage();
+      if (pickedFiles.isEmpty) return [];
+
+      List<XFile> processedFiles = [];
+      for (var file in pickedFiles) {
+        XFile currentFile = file;
+
+        if (crop && mounted()) {
+          currentFile = await cropperService.cropImage(
+            pickedFile: currentFile,
+            context: context,
+          );
+        }
+
+        if (compress) {
+          currentFile = await compressorService.compressImage(
+            currentFile,
+            quality: quality,
+          );
+        }
+        processedFiles.add(currentFile);
+      }
+
+      return processedFiles;
+    } catch (e) {
+      debugPrint('ImagePickerHandler | pickMultiImages failed: $e');
+      return [];
+    }
+  }
 }

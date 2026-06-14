@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:image_picker/image_picker.dart';
+// import 'package:image_picker/image_picker.dart';
 import 'package:image_picker_adapter/image_picker_adapter.dart';
 import 'package:reusable_image_widget/reusable_image_widget.dart';
 

@@ -3,7 +3,7 @@ description: "A modular and customizable image picker adapter for Flutter. Suppo
   cropping, compression, source selection, and Cubit-based state management.
   Built with SOLID principles and clean architecture."
 
-version: 0.0.6
+version: 0.0.7
 homepage: https://github.com/GenieCoderSrc/image_picker_adapter
 repository: https://github.com/GenieCoderSrc/image_picker_adapter
 issue_tracker: https://github.com/GenieCoderSrc/image_picker_adapter/issues
@@ -24,15 +24,17 @@ dependencies:
 
 
   provider: ^6.1.5+1
-  bloc: ^9.0.0
+  bloc: ^9.2.1
   path: ^1.9.1
   flutter_bloc: ^9.1.1
-  equatable: ^2.0.7
-  image_picker: ^1.2.0
+  equatable: ^2.0.8
+  image_picker: ^1.2.2
   flutter_image_compress: ^2.4.0
-  image_cropper: ^9.1.0
-  image: ^4.5.4
-  permission_handler: ^12.0.1
+  image_cropper: ^12.2.1
+  image: ^4.9.1
+  permission_handler: ^12.0.3
+  flutter_reorderable_grid_view: ^5.7.0
+#  reorderable_grid_view: ^2.2.8
 
 
 

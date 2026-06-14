@@ -46,5 +46,33 @@ class ImagePickerCubit extends Cubit<ImagePickerState> {
     }
   }
 
+  Future<void> onPickMultiImages({
+    required BuildContext context,
+    required bool Function() mounted,
+    bool crop = false,
+    bool compress = false,
+    int quality = 35,
+  }) async {
+    emit(ImagePickerLoading());
+
+    try {
+      final List<XFile> pickedFiles = await imagePickerManager.pickMultiImages(
+        context: context,
+        mounted: mounted,
+        crop: crop,
+        compress: compress,
+        quality: quality,
+      );
+
+      if (pickedFiles.isNotEmpty) {
+        emit(ImagePickerMultiSuccess(pickedFiles: pickedFiles));
+      } else {
+        emit(const ImagePickerFailure('No images selected'));
+      }
+    } catch (e) {
+      emit(ImagePickerFailure('Failed to pick images: $e'));
+    }
+  }
+
   void clear() => emit(ImagePickerInitial());
 }

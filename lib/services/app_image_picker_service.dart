@@ -24,4 +24,14 @@ class AppImagePickerService {
       return null;
     }
   }
+
+  Future<List<XFile>> pickMultiImage() async {
+    try {
+      final List<XFile> pickedFiles = await _picker.pickMultiImage();
+      return pickedFiles;
+    } catch (e) {
+      debugPrint('AppImagePickerService | pickMultiImage error: $e');
+      return [];
+    }
+  }
 }
