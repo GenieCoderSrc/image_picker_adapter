@@ -7,6 +7,7 @@ A highly customizable, cross-platform image picking, cropping, and compression t
 ## 🚀 Features
 
 * ✅ Platform-aware image selection from camera or gallery
+* 🖼️ Multi-image picking with reordering support
 * ✂️ Optional image cropping (with customizable UI)
 * 🗜️ Optional image compression
 * 🧩 Modular architecture (SOLID principles)
@@ -45,6 +46,13 @@ flutter pub get
 │     ↳ IImageCropperService
 │     ↳ IImageCompressorService
 └──────────────────────────┘
+
+┌──────────────────────────┐
+│    MultiImagePicker      │ ◄── Multiple images selection
+├──────────────────────────┤
+│  ↳ MultiImageOrderCubit  │ ◄── Handles ordering & selection
+│  ↳ ImagePickerCubit      │ ◄── Underlying picking logic
+└──────────────────────────┘
 ```
 
 ---
@@ -70,6 +78,10 @@ void registerImagePickerAdapterDependencies() {
   sl.registerFactory(
     () => ImagePickerCubit(imagePickerManager: sl<ImagePickerManager>()),
   );
+
+  sl.registerFactory(
+    () => MultiImageOrderCubit(),
+  );
 }
 ```
 
@@ -78,6 +90,7 @@ void registerImagePickerAdapterDependencies() {
 ```dart
 List<SingleChildWidget> imagePickerAdapterBlocProviders = [
   BlocProvider<ImagePickerCubit>(create: (_) => sl<ImagePickerCubit>()),
+  BlocProvider<MultiImageOrderCubit>(create: (_) => sl<MultiImageOrderCubit>()),
 ];
 ```
 
@@ -96,6 +109,26 @@ AppImagePicker(
   ),
 )
 ```
+
+### 4. 🖼️ Use `MultiImagePicker` Widget
+
+To pick and manage multiple images, use the `MultiImagePicker` along with `MultiImageOrderCubit` for selection and ordering.
+
+```dart
+MultiImagePicker(
+  onChanged: (files) {
+    // 'files' is a List<XFile> of selected images
+    debugPrint('Selected ${files.length} images');
+  },
+  imageQuality: 85,
+  crop: false,
+  compress: true,
+  crossAxisCount: 3,
+  crossAxisSpacing: 8.0,
+  mainAxisSpacing: 8.0,
+)
+```
+
 
 ---
 

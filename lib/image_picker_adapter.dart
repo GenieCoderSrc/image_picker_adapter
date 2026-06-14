@@ -17,6 +17,7 @@ export 'view_models/multi_image_order_cubit/multi_image_order_cubit.dart';
 export 'views/image_picker/app_image_picker.dart';
 export 'views/image_picker/app_image_picker_error_widget.dart';
 export 'views/image_picker/avatar_image_picker.dart';
+export 'views/multi_image_picker/gallery_image_picker.dart';
 export 'views/multi_image_picker/multi_image_picker.dart';
 export 'views/multi_image_picker/multi_image_reorder_grid.dart';
 export 'views/source_selector/image_source_selector.dart';

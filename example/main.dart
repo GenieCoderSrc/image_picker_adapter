@@ -21,6 +21,7 @@ class ExampleApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider<ImagePickerCubit>(create: (_) => sl<ImagePickerCubit>()),
+        BlocProvider<MultiImageOrderCubit>(create: (_) => sl<MultiImageOrderCubit>()),
       ],
       child: MaterialApp(
         title: 'Image Picker Adapter Demo',
@@ -71,6 +72,20 @@ class HomeScreen extends StatelessWidget {
               compress: true,
               onChanged: (file) {
                 debugPrint('Avatar picked: ${file?.path}');
+              },
+            ),
+            const SizedBox(height: 30),
+
+            const Text('Multi Image Picker', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const SizedBox(height: 10),
+
+            // Using MultiImagePicker for multiple image selection and reordering
+            MultiImagePicker(
+              crop: true,
+              compress: true,
+              imageQuality: 80,
+              onChanged: (files) {
+                debugPrint('Selected files: ${files.length}');
               },
             ),
           ],
