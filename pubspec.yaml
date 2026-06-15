@@ -17,7 +17,7 @@ dependencies:
     sdk: flutter
 
 
-  get_it_di_global_variable: ^0.0.6
+  get_it_di_global_variable: ^0.0.7
   reusable_image_widget: ^0.1.7
 
 
