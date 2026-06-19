@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.8
 
+### jun 14, 2026
+
+### ✨ Added
+
+- Updated `get_it_di_global_variable to 0.0.8`
 
 ## 0.0.7
 
@@ -18,7 +24,6 @@ All notable changes to this project will be documented in this file.
 ### ✨ Updated
 
 - Updated `reusable_image_widget` to 0.1.7
-
 
 ## 0.0.6
 
