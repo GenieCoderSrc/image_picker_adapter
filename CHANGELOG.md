@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.9
+
+### Sep 26, 2026
+
+### ✨ Updated
+
+- Updated `equatable ^3.0.0`
+- Updated `image_cropper ^12.2.1`
+- Updated `image ^4.10.1`
+
 ## 0.0.8
 
 ### jun 14, 2026
