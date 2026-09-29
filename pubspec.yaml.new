@@ -1,0 +1,14 @@
+name: image_picker_adapter
+description: "A modular and customizable image picker adapter for Flutter. Supports image
+  cropping, compression, source selection, and Cubit-based state management.
+  Built with SOLID principles and clean architecture."
+
+version: 0.0.9
+homepage: https://github.com/GenieCoderSrc/image_picker_adapter
+repository: https://github.com/GenieCoderSrc/image_picker_adapter
+issue_tracker: https://github.com/GenieCoderSrc/image_picker_adapter/issues
+
+environment:
+  sdk: \x27>=3.6.0 <4.0.0\x27
+  resolution: workspace
+    flutter: ">=3.0.0"
