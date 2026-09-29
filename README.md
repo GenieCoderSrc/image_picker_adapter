@@ -22,6 +22,8 @@ A highly customizable, cross-platform image picking, cropping, and compression t
 Add the following to your `pubspec.yaml`:
 
 ```yaml
+resolution: workspace
+
 dependencies:
   image_picker_adapter: latest_version
 ```

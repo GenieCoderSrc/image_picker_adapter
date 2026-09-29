@@ -10,5 +10,5 @@ issue_tracker: https://github.com/GenieCoderSrc/image_picker_adapter/issues
 
 environment:
   sdk: \x27>=3.6.0 <4.0.0\x27
-  resolution: workspace
+
     flutter: ">=3.0.0"

@@ -10,7 +10,9 @@ issue_tracker: https://github.com/GenieCoderSrc/image_picker_adapter/issues
 
 environment:
   sdk: '>=3.6.0 <4.0.0'
-resolution: workspace # <-- Required for Melos 8 & Pub Workspaces
+
+
+resolution: workspace
 
 dependencies:
   flutter:
@@ -18,7 +20,7 @@ dependencies:
 
 
   get_it_di_global_variable: ^0.0.8
-  reusable_image_widget: ^0.1.9
+  reusable_image_widget: ^0.1.8
 
 
 
