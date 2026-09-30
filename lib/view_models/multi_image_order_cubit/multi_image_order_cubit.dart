@@ -24,8 +24,7 @@ class MultiImageOrderCubit extends Cubit<MultiImageOrderState> {
     if (oldIndex < 0 ||
         newIndex < 0 ||
         oldIndex >= state.selectedFiles.length ||
-        newIndex >= state.selectedFiles.length)
-      return;
+        newIndex >= state.selectedFiles.length) return;
 
     final List<XFile> list = List.from(state.selectedFiles);
     final XFile item = list.removeAt(oldIndex);

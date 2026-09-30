@@ -10,7 +10,7 @@ class ImagePickerCubit extends Cubit<ImagePickerState> {
   final ImagePickerManager imagePickerManager;
 
   ImagePickerCubit({required this.imagePickerManager})
-    : super(ImagePickerInitial());
+      : super(ImagePickerInitial());
 
   Future<void> onPickImage({
     required BuildContext context,

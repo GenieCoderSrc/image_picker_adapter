@@ -79,8 +79,7 @@ class AppImagePicker extends StatelessWidget {
           case ImagePickerFailure():
             child = _buildViewer(
               null,
-              error:
-                  errorWidget ??
+              error: errorWidget ??
                   AppImagePickerErrorWidget(
                     message: state.message,
                     onRetry: () => _handlePick(context),

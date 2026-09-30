@@ -61,10 +61,8 @@ class MultiImagePicker extends StatelessWidget {
       },
       builder: (context, pickerState) {
         final isLoading = pickerState is ImagePickerLoading;
-        final currentFiles = context
-            .watch<MultiImageOrderCubit>()
-            .state
-            .selectedFiles;
+        final currentFiles =
+            context.watch<MultiImageOrderCubit>().state.selectedFiles;
 
         // Custom builder override branch
         if (builder != null) {
@@ -105,11 +103,11 @@ class MultiImagePicker extends StatelessWidget {
 
   void _triggerImagePicker(BuildContext context) {
     context.read<ImagePickerCubit>().onPickMultiImages(
-      context: context,
-      mounted: () => context.mounted,
-      crop: crop,
-      compress: compress,
-      quality: imageQuality,
-    );
+          context: context,
+          mounted: () => context.mounted,
+          crop: crop,
+          compress: compress,
+          quality: imageQuality,
+        );
   }
 }
