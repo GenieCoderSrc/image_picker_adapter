@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## 0.0.9
 
-### Sep 26, 2026
+### Sep 30, 2026
 
 ### ✨ Updated
 
